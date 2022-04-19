@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#footerDiv {
+  box-sizing: border-box;
+  padding: 10px 120px 10px;
+  background-color: #446478;
+}
+#footerDiv > div {
+  display: flex;
+  margin-left: 5%;
+}
+#footerDiv > div:nth-child(1) {
+  margin-top: 7%;
+  margin-bottom: 1%;
+}
+#footerDiv > div:nth-child(2) {
+  margin-bottom: 2%;
+}
+#iconDiv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+#iconDiv > i {
+  color: white;
+  background-color: #446478;
+  margin: 1px;
+  padding: 1px;
+  font-size: 24px;
+}
+#iconDiv > div {
+  color: #446478;
+  background-color: white;
+  font-size: 24px;
+  padding: 1px;
+}
+#footerUL {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 13%;
+  line-height: 2;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+#footerUL > div {
+  min-width: 300px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+#footerUL > div > ul {
+  list-style: none;
+  padding: 3px;
+  letter-spacing: 0.01071em;
+}
+.listHeading {
+  padding: 6px;
+  padding-left: 0px;
+}
+.greyHR {
+  background-color: #999;
+  height: 1px;
+  border: none;
+}
+#lastDiv {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+}
+#aboutUsDiv {
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+}
+#aboutUsDiv > div {
+  padding: 0px 22px;
+  height: 21px;
+}
+.greyHR {
+  width: 100%;
+  height: 1px;
+}
+#since {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 3px;
+}

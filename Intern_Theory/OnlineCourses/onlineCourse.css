@@ -1,0 +1,215 @@
+.online_course {
+  background-color: rgb(248, 248, 248);
+  max-width: 100%;
+  box-sizing: border-box;
+
+  color: #3c4858;
+
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  position: absolute;
+  top: 66px;
+}
+.online_course_upper {
+  width: 100%;
+
+  text-align: center;
+  background: url(https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg);
+  margin: auto;
+  background-repeat: no-repeat;
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.online_course_upper img {
+  width: 75%;
+}
+.online_course_lower {
+  width: 85%;
+  margin: auto;
+}
+.parent_carts {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.carts {
+  display: flex;
+
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+.cart {
+  width: 23%;
+  padding: 0.01%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  margin: 0.8%;
+  box-shadow: 0.5px 0.5px 8px #7a77776e;
+  justify-content: space-between;
+  background-color: white;
+}
+.carts > .cart > .padding {
+  padding: 5%;
+}
+.carts > .cart > .padding p {
+  font-size: 14px;
+}
+.cart img {
+  width: 100%;
+  height: 110%;
+  border-radius: 2px;
+  border-image-repeat: none;
+}
+.border_bottom {
+  border-bottom: 1.5px dashed gray;
+  padding-bottom: 10%;
+}
+.border_bottom > p {
+  font-size: 0.875rem;
+}
+
+.left_align {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 15px;
+  margin: 1%;
+  margin-top: 0px;
+}
+.left_align * {
+  margin: 1%;
+}
+.color_gray {
+  color: gray;
+  font-weight: normal;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.color_black {
+  color: black;
+  margin-bottom: 0px;
+}
+.color_yellow {
+  color: rgb(254, 179, 39);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 0px;
+  font-size: 14px;
+}
+.border_radius {
+  border-radius: 80%;
+  border: 1px solid rgb(254, 179, 39);
+  margin: 0px 0px -1px 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 15px;
+}
+.color_green {
+  color: rgb(80, 126, 221);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+}
+.color_green:hover {
+  background-color: rgba(80, 127, 221, 0.055);
+}
+.button {
+  background-color: rgb(222, 30, 47);
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 120px;
+  text-align: center;
+}
+.button:hover {
+  background-color: rgb(161, 4, 4);
+  cursor: pointer;
+}
+.sidebarIcons {
+  width: 25px;
+  height: 26px;
+  padding-top: 10px;
+}
+#menu {
+  width: 40px;
+  height: 40px;
+  margin: 6px 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logo {
+  width: 70px;
+  height: 20px;
+}
+.navbar_container {
+  position: fixed;
+  z-index: 1;
+}
+
+/* adding extra css */
+
+#header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 65px;
+  border: 1px solid white;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 24px;
+  position: fixed;
+  margin-bottom: 100px;
+  background-color: #fff;
+
+  /* box-shadow: rgba(0, 2px, 2px, -1px); */
+}
+#headerDiv {
+  display: flex;
+}
+#navEnd {
+  margin-left: auto;
+}
+#menu {
+  width: 40px;
+  height: 40px;
+  margin: 6px 0;
+  border-radius: 50%;
+}
+#logo {
+  width: 75px;
+  height: 38px;
+  padding-top: 8px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+#cart {
+  width: 24px;
+  height: 24px;
+  margin: 6px 0;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+#navEnd > button {
+  background-color: #df1e2e;
+  color: white;
+  font: bolder;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 8px;
+  vertical-align: top;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  width: 82px;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+}

@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* font-family: "lato", ubuntu, helvetica, sans-serif; */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  border-radius: 3px;
+  z-index: 5;
+  background-color: white;
+  width: 310px;
+  height: 510px;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#cardAddingOption {
+  font-size: 14px;
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#redPart {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+#redPart > div > img {
+  padding: 8px;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 3px;
+}
+#language {
+  background-color: #a91f2a;
+  font-size: 14px;
+  padding: 8px;
+  color: #fff;
+  padding-left: 25px;
+}
+#cardNumber {
+  color: #757575;
+  background-color: #fff3f4;
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  padding-left: 25px;
+}
+.close-button {
+  float: right;
+  background-color: #c52a37;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  margin: 10px;
+  color: rgb(197, 190, 190);
+  margin-right: 0;
+}
+#purchaseDescription {
+  color: rgb(197, 190, 190);
+}
+#priceDiv {
+  height: 7px;
+  font-weight: 500;
+}
+.modal-body {
+  display: grid;
+  padding: 10px 15px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.modal-body > div {
+  display: flex;
+  flex-direction: column;
+}
+.modal-body label {
+  color: #757575;
+}
+#cardSave {
+  display: flex;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#header,
+#verify {
+  background-color: #c52a37;
+}
+#verify {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+#overlay {
+  position: fixed;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#cartDetails {
+  margin-left: 15px;
+  color: white;
+}
+#cartDetails > div:nth-child(1) {
+  font-size: 20px;
+}
+#cartDetails > div:nth-child(2) {
+  font-size: 14px;
+}
+#cartDetails > div:nth-child(3) {
+  font-size: 24px;
+  margin-top: 8px;
+}
+/* #overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} */
+#cardNumber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #757575;
+}
+#cardAddingOption {
+  color: #9b9393;
+  padding: 18px;
+}
+#holderName > input,
+#cardNo > input {
+  border: none;
+  border-bottom: 1px solid rgba(230, 225, 225, 0.651);
+  width: 190px;
+  min-width: 100%;
+  height: 18px;
+  margin-top: none;
+  outline: none;
+}
+#holderName > label,
+#cardNo > label {
+  margin-top: 5px;
+}
+#holderName > input:focus,
+#cardNo > input:focus {
+  border-bottom: 1px solid #a31824;
+}
+#holderName,
+#cardNo {
+  margin-right: 15px;
+}
+#expiry > input,
+#cvv > input {
+  width: 55px;
+  height: 18px;
+  border: none;
+  border-bottom: 1px solid rgba(230, 225, 225, 0.651);
+  margin-top: none;
+  outline: none;
+}
+#expiry > label,
+#cvv > label {
+  margin-top: 5px;
+}
+#expiry > input:focus,
+#cvv > input:focus {
+  border-bottom: 1px solid #a31824;
+}
+#cardSave a {
+  color: #3f71d7;
+  margin-top: 15px;
+}
+#saveCardDiv {
+  margin-left: 10px;
+  line-height: 1.5;
+}
+#checkbox {
+  background-color: #c52a37;
+}
+.arrowIconsDown {
+  font-weight: 100;
+  font-size: 10px;
+  padding-left: 15px;
+}
+.arrowIconsLeft {
+  font-weight: 100;
+  font-size: 15px;
+  padding-right: 15px;
+}
+/* #arrowIconsLeft {
+  padding-top: 30px;
+} */
+#phoneNo {
+  font-size: 12px;
+  vertical-align: top;
+  letter-spacing: 0.01938em;
+  width: 150px;
+  margin-left: 5px;
+}

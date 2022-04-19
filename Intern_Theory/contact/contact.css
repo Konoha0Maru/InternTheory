@@ -1,0 +1,85 @@
+
+iframe{
+    border-radius: 5px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.main{
+    margin-top:50px;
+display:flex;
+padding: 70px;
+width:90%;
+margin:auto;
+}
+#Contact-page-info{
+
+margin-left: 40px;
+width:42%;
+
+/* padding:50px; */
+/* border: 1px solid grey; */
+font-family: Helvetica, Arial;
+border-radius: 5px;
+}
+
+.contect-details{
+margin-top:70px;
+border:none;
+border-bottom: 1px solid grey;
+width:90%;
+margin-bottom:-30px;
+
+
+}
+.contect-details::placeholder{
+font-size:18px;
+}
+.contect-details:focus
+{
+border:none;
+border-bottom: 2px solid black;
+outline-offset: 0px;
+outline: none;
+width:90%;
+margin-top:70px;
+
+}
+.contact-heading{
+font-size:55px;
+margin-top:0px;
+
+
+}
+.contact-paragraph{
+line-height: 30px;
+font-size:19px;
+margin-top:0px
+}
+#contect-details-button{
+color:white;
+background-color:rgb(214,29,44);
+border-radius: 5px;
+padding:10px;
+margin-top:60px;
+margin-left: 25%;
+width:100px;
+height:44px;
+outline:none;
+
+
+}
+#contect-icon-img{
+width:20%;
+margin-left:25%;
+margin-top: 70px;
+cursor: pointer;
+/* height:50px; */
+}
+.contect-text{
+
+
+font-size:19px;
+margin-left:18%;
+
+}

@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    background-position: center;
+    background-color: whitesmoke;
+}
+.form_box{
+    width: 500px;
+    height: 640px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 50%;
+    margin-right: 10%;
+    background: #fff;
+    /* padding: 5px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+#divR1{
+    /* background-color: red; */
+    padding-top: 35px;
+    color: gray;
+}
+
+#divR2{
+    /* background-color: green; */
+    font-size: medium;
+    margin-top: -20px;
+    color: gray;
+
+    
+}
+.ancor_color{
+    color: rgb(34, 180, 238);
+}
+
+#divR3{
+    border: 1px solid hotpink;
+    border-style: dotted;
+    font-size: 19px;
+    margin-top: -20px;
+    background-color: rgb(255, 236, 236);
+    border-radius: 6px;
+    
+}
+#img{
+    width: 20px;
+    padding-top: 4px;
+    /* margin-left: 10px; */
+    /* background-color: #fff; */
+}
+.logo{
+    background-color: white;
+    width: 30px;
+    border-radius: 20%;
+    margin-left: 30px;
+}
+#hR5{
+    padding: 5px;
+    color: gray;
+}
+
+
+#register_butlkd{
+    background-color: rgba(30, 49, 226, 0.747);
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    /* height: 30px; */
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    gap: 70px;
+    padding-top: 7px;
+    margin-top: -20px;
+}
+/* img{
+    width: 15px;
+    padding-left: 20px;
+} */
+
+#divR5{
+    /* background-color: yellow; */
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+#divR12{
+    /* background-color: skyblue; */
+    text-align: center;
+}
+
+
+.inputedit1{
+    margin-left: 8px;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: larger;
+    outline: none;
+}
+
+.inputedit{
+    margin-left: 8px;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: larger;
+    outline: none;
+    width: 95%;
+    color: gray;
+}
+#proceed_but{
+    width: 60%;
+    height: 35px;
+    font-size: 20px;
+    color: red;
+    background-color: #fff;
+    border:0.5px solid red;
+}

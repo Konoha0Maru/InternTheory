@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Navigation CSS */
+button {
+  border: none;
+  border-radius: 5px;
+  background: #dd1e2e;
+  height: 36px;
+  color: white;
+  width: 90px;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-right: 25px;
+  box-shadow: 0.5px 0.5px 3px #888888;
+}
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.navbar_container {
+  position: fixed;
+  z-index: 1;
+}
+/* ////////////  CART  //////////////////////// */
+
+.checkout_cart {
+  background-color: rgb(248, 249, 249);
+  /* border: 1px solid red; */
+  /* height: 500px; */
+  position: relative;
+  top: 66px;
+  margin: auto;
+  padding: 3%;
+}
+
+.checkout_cart_main {
+  background-color: white;
+  width: 85%;
+  height: 70vh;
+  margin: auto;
+  box-shadow: 0.5px 0.5px 3px #888888a8;
+  border-radius: 5px;
+}
+.checkout_cart_main > .left {
+  float: left;
+  width: 60%;
+  height: 90%;
+  margin-top: 2%;
+  padding: 3%;
+  color: rgb(60, 72, 110);
+  font-weight: normal;
+  font-size: 20px;
+}
+.checkout_cart_main > .left .cart_empty,
+.opt_carts_cart {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.801);
+}
+.checkout_cart_main > .left .cart_empty button,
+.opt_carts_cart button {
+  width: 60%;
+  margin: auto;
+  font-size: 12px;
+  padding: 1%;
+  background-color: rgb(8, 124, 221);
+}
+
+.checkout_cart_main > .vr_line {
+  height: 72%;
+  background-color: rgb(60, 72, 88);
+  width: 1px;
+
+  float: left;
+
+  margin: 1%;
+  margin-top: 5%;
+}
+.checkout_cart_main > .right .checkout_form {
+  width: 30%;
+  float: left;
+  margin-top: 3%;
+  padding-left: 2%;
+}
+
+.checkout_form > div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(60, 72, 88);
+  color: rgb(60, 72, 88);
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+.checkout_form .total {
+  color: black;
+  font-weight: bold;
+  padding-top: 8%;
+  border: none;
+}
+.checkout_form .checkout_btn {
+  width: 85%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.apply_coupon {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 0px;
+
+  width: 100%;
+}
+.coupon_btn {
+  margin-top: -10px;
+  margin-left: 8px;
+  width: 22%;
+}
+.checkout_form .cart_emi {
+  border: none;
+  color: rgb(254, 178, 38);
+  font-weight: bold;
+  text-align: center;
+  margin-left: 8%;
+}
+/* Carts CSS */
+.opt_courses {
+  width: 100%;
+}
+.opt_courses_cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  color: #3c4858;
+  border-bottom: 2px dashed #ddd;
+}
+.opt_courses_left {
+  align-items: center;
+
+  display: flex;
+}
+
+.cross {
+  width: 24px;
+  height: 24px;
+  color: red;
+  fill: currentColor;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.opt_courses_title > h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.opt_courses_img {
+  margin-right: 20px;
+}
+.opt_courses_img > img {
+  height: 80px;
+  width: 120px;
+}
+.opt_courses_right {
+  display: flex;
+}
+.opt_courses_right > h2 {
+  font-size: 14px;
+}
+.opt_courses_right > p {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+#promo_price {
+  display: none;
+}
+/* ////////////  CART END //////////////////////// */
+
+/* adding extra css */
+
+#header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 65px;
+  border: 1px solid white;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 24px;
+  position: fixed;
+  margin-bottom: 100px;
+  background-color: #fff;
+
+  /* box-shadow: rgba(0, 2px, 2px, -1px); */
+}
+#headerDiv {
+  display: flex;
+}
+#navEnd {
+  margin-left: auto;
+}
+#menu {
+  width: 40px;
+  height: 40px;
+  margin: 6px 0;
+  border-radius: 50%;
+}
+#logo {
+  width: 75px;
+  height: 38px;
+  padding-top: 8px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+#cart {
+  width: 24px;
+  height: 24px;
+  margin: 6px 0;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+#navEnd > button {
+  background-color: #df1e2e;
+  color: white;
+  font: bolder;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 8px;
+  vertical-align: top;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  width: 82px;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+}

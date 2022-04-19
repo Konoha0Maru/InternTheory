@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#header {
+  width: 100%;
+  box-sizing: border-box;
+  height: 65px;
+  border: 1px solid white;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 24px;
+  position: fixed;
+  box-shadow: rgba(0, 2px, 2px, -1px);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+#headerDiv {
+  display: flex;
+}
+#navEnd {
+  margin-left: auto;
+}
+#menu {
+  width: 50px;
+  height: 50px;
+  margin: 6px 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#logo {
+  width: 75px;
+  height: 38px;
+  padding-top: 8px;
+  padding-left: 15px;
+  vertical-align: top;
+  cursor: pointer;
+}
+#cart {
+  width: 24px;
+  height: 24px;
+  margin: 6px 0;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#navEnd > a > button {
+  background-color: #df1e2e;
+  color: white;
+  font: bolder;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 8px;
+  vertical-align: top;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  width: 82px;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+#navEnd > a > button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* SideBar */
+
+#sideBar {
+  display: none;
+  margin: 0px;
+  width: 0px;
+  height: 100%;
+  position: fixed;
+  /* border: 1px solid red; */
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0px 1px 14px 0px rgb(0 0 0 / 12%);
+  overflow-y: auto;
+}
+#sidebarNav {
+  display: flex;
+}
+.sidebarNav_img {
+  display: none;
+}
+.sidebarNav_img2 {
+  display: none;
+}
+#sidebarCategories > ul {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  line-height: 2.5;
+  display: none;
+  font-size: 16px;
+  color: #212121;
+  font-weight: 700;
+  vertical-align: top;
+  margin-left: -5px;
+}
+.categoriesHeading {
+  margin-left: 30px;
+  vertical-align: top;
+}
+.sidebarCatagoriesUL {
+  padding: 0;
+  margin: 0;
+}
+.sidebarCatagoriesUL > li {
+  padding: 0px;
+  margin-left: 0px;
+  display: flex;
+}
+#sidebarCatagoriesUL > a {
+  text-decoration: none;
+  color: black;
+}
+.sidebarIcons {
+  width: 22px;
+  height: 19px;
+  padding-top: 10px;
+}
+#sidebarCategoriesHR {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgb(222, 222, 222);
+  margin: 10px;
+}
+#menu:hover {
+  background-color: hsla(0, 0%, 98%, 0.075);
+}
+#sidebarCategories > #sidebarCatagoriesUL > a > li {
+  margin-left: -8px;
+}
+#sidebarCategories > #sidebarCatagoriesUL > a > li > img {
+  margin-left: 10px;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li {
+  margin-left: -8px;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li > div > img {
+  margin-left: 10px;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li > span {
+  cursor: pointer;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li > div > span {
+  cursor: pointer;
+}
+
+#sidebarCategories > #sidebarCatagoriesUL > a > li:hover {
+  background-color: #eceff1;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li > div:hover {
+  background-color: #eceff1;
+}
+#sidebarCategories > #sidebarCatagoriesUL > li > .sidebarIcons:hover {
+  background-color: #eceff1;
+  color: #eceff1;
+}
+#expandableCourse:hover {
+  background-color: #eceff1;
+}
+#coursesHidden > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+#coursesHidden > a > div {
+  width: 200px;
+  margin-left: -88px;
+  padding-left: 100px;
+}
+#coursesHidden > a > div:hover {
+  background-color: #eceff1;
+}
+#registerHidden > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+#registerHidden > a > div {
+  width: 200px;
+  margin-left: -88px;
+  padding-left: 100px;
+}
+#registerHidden > a > div:hover {
+  background-color: #eceff1;
+}
+#loginHidden > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+#loginHidden > a > div {
+  width: 200px;
+  margin-left: -88px;
+  padding-left: 100px;
+}
+#loginHidden > a > div:hover {
+  background-color: #eceff1;
+}
+.fa-chevron-down {
+  color: #087cdd;
+  padding-right: auto;
+}
+/* .expandableLogin .expandableRegister .expandableCourse {
+} */
+#sidebarCatagoriesUL > li:hover {
+  background-color: #dcdcdc;
+}
+#sidebarCatagoriesUL {
+  max-width: 100%;
+}
+.sidebarTitles i {
+  float: right;
+  margin-right: 25px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+#coursesHidden,
+#loginHidden,
+#registerHidden {
+  display: none;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  text-align: left;
+  padding-left: 30%;
+}

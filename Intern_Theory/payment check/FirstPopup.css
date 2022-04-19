@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 2px;
+  z-index: 10;
+  background-color: white;
+  height: 310px;
+  width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.title {
+  margin-top: 45px;
+  margin-left: 35px;
+  color: #3c4858;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-body {
+  padding: 10px 15px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.paymentPage {
+  padding: 8px;
+  color: #087cdd;
+  border-radius: 3px;
+  border: 1px solid #83bdee;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  vertical-align: top;
+  width: 253px;
+  height: 35px;
+}
+.paymentPage:hover {
+  background-color: rgba(131, 189, 238, 0.2);
+  border-color: #087cdd;
+}
+.card {
+  width: 23px;
+  height: 19px;
+  vertical-align: bottom;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(195, 211, 211);
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #a31824;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 200ms ease-in-out;
+  border-radius: 3px;
+  z-index: 5;
+  background-color: white;
+  width: 400px;
+  height: 170px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#cardAddingOption {
+  font-size: 14px;
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#redPart {
+  font-size: 26px;
+  color: #a31824;
+  margin-left: 80px;
+  margin-bottom: 0;
+}
+.close-button {
+  float: right;
+}
+.modal-body {
+  padding: 10px 15px;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.modal-body > p {
+  margin-top: 5px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

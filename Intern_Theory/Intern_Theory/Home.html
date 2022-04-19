@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title class="text-capitalize" data-react-helmet="class">
+      Internships and Online Courses for College Students | Intern Theory
+    </title>
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../Footer/footer.css" />
+
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/05f0690cbc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar_container"></div>
+    <!-- Please integrate header above  -->
+
+    <div id="S_container">
+      <div id="s_text">
+        <h2 class="verify">Let's Get You <b id="ready"> Ready </b></h2>
+        <h3>
+          The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An
+          Internship. Get Placed
+        </h3>
+      </div>
+
+      <div id="S_input_box">
+        <div id="input_flex">
+          <div id="mainInput">
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="      City Name.."
+            />
+            <br />
+            <div id="div1"></div>
+          </div>
+
+          <!-- the above is city div  -->
+          <div onclick="remove11()">
+            <select name="" id="city">
+              <option value="Type...">Type...</option>
+              <option value="Punjab">Full-Time</option>
+              <option value="Part-Time">Part-Time</option>
+              <option value="Work From Home/Campus">
+                Work From Home/Campus
+              </option>
+            </select>
+          </div>
+          <div onclick="remove11()">
+            <select name="" class="S_city">
+              <option value="Preference...">Preference...</option>
+              <option value="Admin">Admin</option>
+              <option value="Advertisement">Advertisement</option>
+              <option value="Animation">Animation</option>
+              <option value="App Design & Development">
+                App Design & Development
+              </option>
+              <option value="architecture">architecture</option>
+              <option value="Bio-tech & Medicine">Bio-tech & Medicine</option>
+              <option value="Business">Business</option>
+              <option value="Accounting">Accounting</option>
+              <option value="Banking"></option>
+              <option value="CA">CA</option>
+              <option value="Branding">Branding</option>
+
+              <option value="Civil Engineering">Civil Engineering</option>
+            </select>
+          </div>
+          <!-- preference div is above  -->
+          <!-- Testing start -->
+          <div onclick="remove11()" id="searchDiv">
+            <input type="text" name="" id="S_Search" placeholder="Search..." />
+            <button id="S_button">SEARCH</button>
+          </div>
+          <!-- testing end -->
+          <!-- button div is baove  -->
+        </div>
+      </div>
+    </div>
+    <!-- banner div ended above  -->
+
+    <div id="S_Box2">
+      <div class="main-main-2">
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <h1 id="companyDivHead">
+          PLETHORA OF OPPORTUNITIES <span id="foryou">FOR YOU </span>
+        </h1>
+        <br />
+        <hr />
+        <br />
+        <h4 class="h3">
+          We are on a mission to connect employers to young talent all over
+          India. With our strong corporate network, it will no longer be a
+          challenge to find the right internship for you
+        </h4>
+      </div>
+      <!-- sub_box1 -->
+      <div id="S_grid_Box">
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-1.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-2.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-3.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-4.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-6.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-7.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-8.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-9.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-10.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-11.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-12.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-13.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-14.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-15.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-16.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS"
+            src="https://assets.interntheory.com/creative/home-logo/logo-17.png"
+            alt=""
+          />
+        </div>
+        <!-- <div><img class ="LOGOS" src="https://assets.interntheory.com/creative/home-logo/logo-18.png" alt=""></div>
+      <div> <img class ="LOGOS" src="" alt="https://assets.interntheory.com/creative/home-logo/logo-19.png"></div> -->
+      </div>
+      <!-- sub_box2 -->
+    </div>
+
+    <!-- logos part ended  -->
+
+    <div id="S_Box3">
+      <h1>
+        LET'S GET SOME <span id="work_experiance"> WORK EXPERIANCE </span>
+      </h1>
+
+      <div id="S_Box3_1">
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/BD.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/HR.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="S_Box4">
+      <h5>How about <span id="upskill"> Upskilling ? </span></h5>
+
+      <div id="flex_Box_4">
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="LOGOS_2"
+            src="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="S_Box_5">
+      <div>
+        <img
+          class="Logos_3"
+          src="https://assets.interntheory.com/creative/chart.png"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <br /><br /><br /><br /><br /><br /><br />
+        <h1>WE ARE CONSTANTLY <span id="upskill"> GROWING</span></h1>
+        <hr />
+        <h3 class="h3">
+          We are on a mission to help every student in India. Upgrading your CV
+          and getting you a meaningful job remains our sole motive and we are
+          not stopping anytime soon.
+        </h3>
+      </div>
+    </div>
+
+    <!-- done with most of the part  -->
+
+    <div id="S_Box_6">
+      <div id="S_box_6_slider">
+        <div id="S_box_6_div_photo">
+          <img
+            class="photo1"
+            src="https://assets.interntheory.com/img/testimonial-image/in3.jpg"
+            alt=""
+          />
+          <h4 id="kitri_garg">Kirti Garg</h4>
+          <h5><a id="kirti_feedback" href="#">Intern at Porche</a></h5>
+        </div>
+        <div id="kirti_feedback_1">
+          "I was on a look out for an internship to spend my summer productively
+          and I stumbled upon Inter Theory. Their team was very kind and kept me
+          updated. I applied for Viacom18 and got through. I thank Intern Theory
+          team for giving me this opportunity."
+        </div>
+      </div>
+    </div>
+
+    <!-- the below code is for footer -->
+
+    <div class="footer_container"></div>
+  </body>
+</html>
+<script type="module">
+  import { navbar, footer } from "../components/navbar.js";
+
+  let navbar_container = document.querySelector(".navbar_container");
+  let footer_container = document.querySelector(".footer_container");
+
+  navbar_container.innerHTML = navbar();
+  footer_container.innerHTML = footer();
+
+  var body = document.querySelector("body");
+  var sideBar = document.getElementById("sideBar");
+  var sidebarNav_img = document.querySelector(".sidebarNav_img");
+  var sidebarNav_img2 = document.querySelector(".sidebarNav_img2");
+  var menu = document.getElementById("menu");
+  var logo = document.getElementById("logo");
+  var header = document.getElementById("header");
+  var sidebarCatagoriesUL = document.getElementById("sidebarCatagoriesUL");
+  var sideBarNav = document.getElementById("sidebarNav");
+  var sidebarTitle = document.querySelectorAll(".sidebarTitles");
+  var expandableCourses = document.querySelector("#expandableCourse");
+  var coursesHidden = document.getElementById("coursesHidden");
+  var expandableRegister = document.getElementById("expandableRegister");
+  var expandableLogin = document.getElementById("expandableLogin");
+  var registerHidden = document.getElementById("registerHidden");
+  var loginHidden = document.getElementById("loginHidden");
+
+  sideBar.style.paddingLeft = "0px";
+
+  menu.addEventListener("click", () => {
+    sideBar.style.width = "300px";
+    sidebarNav_img.style.display = "block";
+    sidebarNav_img2.style.display = "block";
+    header.style.paddingLeft = "0px";
+    body.style.background = "#fafafa";
+    sideBar.style.background = "white";
+    // sideBar.style.paddingLeft = "12px";
+    sideBarNav.style.paddingLeft = "12px";
+    sidebarCatagoriesUL.style.display = "block";
+    sidebarCatagoriesUL.style.paddingLeft = "12px";
+  });
+
+  sidebarNav_img.addEventListener("click", () => {
+    sideBar.style.width = "0px";
+    sidebarNav_img.style.display = "none";
+    sidebarNav_img2.style.display = "none";
+    // sideBar.style.paddingLeft = "0px";
+    header.style.paddingLeft = "12px";
+    body.style.background = "#fff";
+    sidebarCatagoriesUL.style.display = "none";
+  });
+
+  expandableRegister.addEventListener("click", () => {
+    if (registerHidden.style.display == "block") {
+      registerHidden.style.display = "none";
+      expandableRegister.style.backgroundColor = "white";
+    } else {
+      registerHidden.style.display = "block";
+      expandableRegister.style.backgroundColor = "#dcdcdc";
+      registerHidden.style.backgroundColor = "white";
+    }
+  });
+
+  expandableLogin.addEventListener("click", () => {
+    if (loginHidden.style.display == "block") {
+      loginHidden.style.display = "none";
+      expandableLogin.style.backgroundColor = "white";
+    } else {
+      loginHidden.style.display = "block";
+      expandableLogin.style.backgroundColor = "#dcdcdc";
+      loginHidden.style.backgroundColor = "white";
+    }
+  });
+
+  expandableCourses.addEventListener("click", () => {
+    if (coursesHidden.style.display == "block") {
+      coursesHidden.style.display = "none";
+      expandableCourses.style.backgroundColor = "white";
+    } else {
+      coursesHidden.style.display = "block";
+      expandableCourses.style.backgroundColor = "#dcdcdc";
+      coursesHidden.style.backgroundColor = "white";
+    }
+  });
+</script>
+
+<script src="Home.js"></script>

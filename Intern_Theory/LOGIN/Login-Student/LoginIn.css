@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  width: 100%;
+
+  background-position: center;
+  background-color: whitesmoke;
+}
+.form_box {
+  width: 500px;
+  height: 600px;
+  /* position: relative; */
+  margin-top: 7%;
+  margin-left: 30%;
+  margin-right: 10%;
+  background: #fff;
+  /* padding: 5px; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 8px 8px -4px gray;
+}
+#navbaartwo {
+  display: flex;
+  gap: 30%;
+  padding-left: 60px;
+  padding-top: 50px;
+}
+.navbut {
+  border: none;
+  outline: none;
+  background: none;
+  color: gray;
+}
+#dynamic {
+  /* text-decoration: underline; */
+  /* text-decoration-color: turquoise; */
+  /* -moz-text-decoration-line: ; */
+  border-bottom: 3px solid turquoise;
+  width: 150px;
+  padding-bottom: 5px;
+}
+#logintext {
+  padding-left: 50px;
+  font-size: 30px;
+  margin-top: -20px;
+}
+#divRS1 {
+  /* background-color: red; */
+  padding-top: 35px;
+  color: gray;
+}
+#divRS2 {
+  /* background-color: green; */
+  font-size: medium;
+  margin-top: -20px;
+  color: gray;
+}
+
+.ancor_color {
+  color: rgb(34, 180, 238);
+}
+
+#divRS3 {
+  border: 1px solid hotpink;
+  border-style: dotted;
+  font-size: 19px;
+  margin-top: -20px;
+  background-color: rgb(255, 236, 236);
+  border-radius: 6px;
+  padding: 10px;
+}
+#img {
+  width: 20px;
+  padding-top: 4px;
+  /* margin-left: 10px; */
+  /* background-color: #fff; */
+}
+.logo {
+  background-color: white;
+  width: 30px;
+  border-radius: 20%;
+  margin-left: 30px;
+}
+#divRS4 {
+  text-align: center;
+}
+#register_butlkd {
+  background-color: rgba(30, 49, 226, 0.747);
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  gap: 70px;
+  padding-top: 7px;
+  margin-top: -20px;
+  width: 100%;
+  padding-left: 20px;
+}
+.but_text {
+  padding-left: 65px;
+}
+#divRS6 {
+  text-align: center;
+  margin-top: -20px;
+}
+.inputedit1 {
+  margin-left: 8px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: larger;
+  outline: none;
+  width: 48%;
+}
+
+.inputedit {
+  margin-left: 8px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: larger;
+  outline: none;
+  width: 98%;
+  color: gray;
+}
+#proceed_but {
+  width: 97%;
+  height: 35px;
+  font-size: 20px;
+  color: red;
+  background-color: #fff;
+  border: 0.5px solid red;
+}
+
+#forgetsection {
+  display: flex;
+  gap: 180px;
+  /* padding-left: 10px; */
+  margin-left: 20px;
+  margin-top: -10px;
+}
+#forget1 {
+  display: flex;
+  gap: 20px;
+  justify-items: baseline;
+}
+#re {
+  /* margin-bottom: 50px; */
+  margin-top: -6px;
+  color: gray;
+  /* text-decoration: none; */
+}
+a {
+  text-decoration: none;
+}
+#createaccount {
+  display: flex;
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
+  /* margin-left: 10px; */
+  margin-top: -20px;
+}
+#createaccounttext {
+  color: gray;
+  /* margin-left: 100px; */
+}
