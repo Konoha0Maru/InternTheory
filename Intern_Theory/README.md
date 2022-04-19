@@ -10,11 +10,11 @@ This project was a clone build during Masai School Unit-3 construct week.We had 
 
 
 ## Authors
+- [@Mangesh Balasaheb Niras](https://github.com/mangeshniras)
 - [@Anowar Hossain](https://github.com/anowar265)
 - [@shubham mishra](https://github.com/78640sam)
 - [@Pavithran](https://github.com/pavithran-paviii)
 - [@Sarfaraz](https://github.com/Sarfaraz0730)
-- [@Mangesh Balasaheb Niras](https://github.com/mangeshniras)
 
 ## Tech Stack
 
