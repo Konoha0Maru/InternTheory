@@ -10,10 +10,7 @@ This project was a clone build during Masai School Unit-3 construct week.We had 
 
 
 ## Authors
-- [@Mangesh Balasaheb Niras](https://github.com/mangeshniras)
-- [@Anowar Hossain](https://github.com/anowar265)
-- [@shubham mishra](https://github.com/78640sam)
-- [@Pavithran](https://github.com/pavithran-paviii)
+- [@HeKang](https://github.com/Konoha0Maru)
 - [@Sarfaraz](https://github.com/Sarfaraz0730)
 
 ## Tech Stack
@@ -36,12 +33,6 @@ Contributions are always welcome!You can contribute to this project to make this
 
 For support,Mail  
 
-shubhammishra78640@gmail.com
-
-mangeshniras@gmail.com
-
-sarfarazpycoder@gmail.com
-
-anowar3042@gmail.com
+successvictory680@gmail.com
 
 pavithranr65@gmail.com
